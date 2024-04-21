@@ -1,0 +1,179 @@
+body {
+    background-image: url("../img/stars.jpeg");
+    overflow: hidden;
+}
+
+/* Class for map rotation animations */
+.map-rotation {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/* Styles for the Sun */
+.sun {
+    position: absolute;
+    top: 45%;
+    left: -2%;
+    width: 30vw;
+    height: 30vw;
+    background: url("../img/sun-map.jpg");
+    border-radius: 20vw;
+    background-size: 55vw;
+    animation-duration: 35s;
+    -webkit-animation-duration: 35s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Mercury */
+.mercury {
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    width: 3vw;
+    height: 3vw;
+    background: url("../img/mercury-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 15vw;
+    animation-duration: 70s;
+    -webkit-animation-duration: 70s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Venus */
+.venus {
+    position: absolute;
+    top: 45%;
+    left: 22%;
+    width: 5vw;
+    height: 5vw;
+    background: url("../img/venus-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 10vw;
+    animation-duration: 90s;
+    -webkit-animation-duration: 90s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Earth */
+.earth {
+    position: absolute;
+    top: 46%;
+    left: 32%;
+    width: 10vw;
+    height: 10vw;
+    background: url("../img/worldmap.jpg");
+    border-radius: 20vw;
+    background-size: 20vw;
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    animation-duration: 24s;
+    -webkit-animation-duration: 24s;
+    transform: translate(-50%, -50%) rotate(23.5deg);
+}
+
+/* Styles for the planet Mars */
+.mars {
+    position: absolute;
+    top: 45%;
+    left: 41%;
+    width: 4vw;
+    height: 4vw;
+    background: url("../img/mars-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 10vw;
+    animation-duration: 25s;
+    -webkit-animation-duration: 25s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Jupiter */
+.jupiter {
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    width: 15vw;
+    height: 15vw;
+    background: url("../img/jupiter-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 29vw;
+    animation-duration: 9s;
+    -webkit-animation-duration: 9s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Saturn */
+.saturn {
+    position: absolute;
+    top: 45%;
+    left: 69%;
+    width: 12vw;
+    height: 12vw;
+    background: url("../img/saturn-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 29vw;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Uranus */
+.uranus {
+    position: absolute;
+    top: 45%;
+    left: 83%;
+    width: 11vw;
+    height: 11vw;
+    background: url("../img/uranus-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 29vw;
+    animation-duration: 18s;
+    -webkit-animation-duration: 18s;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the planet Neptune */
+.neptune {
+    position: absolute;
+    top: 45%;
+    left: 96%;
+    width: 10vw;
+    height: 10vw;
+    background: url("../img/neptune-map.jpg");
+    box-shadow: inset -2vw 1vw 2vw 0.3vw rgba(0, 0, 0, 0.8);
+    border-radius: 20vw;
+    background-size: 29vw;
+    animation-duration: 16s;
+    -webkit-animation-duration: 16s;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Keyframe animations controlling the background image position */
+@keyframes rotate {
+    from {
+        background-position: 0.5vw 0.5vw;
+    }
+
+    to {
+        background-position: 31vw 0.5vw;
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        background-position: 0.5vw 0.5vw;
+    }
+
+    to {
+        background-position: 31vw 0.5vw;
+    }
+}
